@@ -16,3 +16,9 @@ yarn add -D @types/eslint-plugin-prettier
 yarn add styled-components
 yarn add -D @types/styled-components
 yarn add styled-normalize // 브라우저마다 다르게 보이는 css를 초기화 시키기 위해 다운
+
+yarn add -D babel-plugin-styled-components // next 에서 styled-component 초기렌더부분 에러 해결위함
+yarn add -D babel-plugin-module-resolver  // 간편하게 파일 import 하기 위해서 필요함
+
+.babelrc //alias 등록, styled-component 연결 
+tsconfig.json // alias 등록, rule 확인

@@ -1,0 +1,30 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "."
+        ],
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ],
+        "alias": {
+          "@styles": "./src/styles",
+          "@store": "./src/store",
+          "@mock": "./__mock__"
+        }
+      }
+    ]
+  ]
+}
