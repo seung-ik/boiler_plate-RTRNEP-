@@ -9,10 +9,10 @@ yarn add -D eslint-plugin-jsx-a11y eslint-plugin-import
 
 yarn eslint --init
 
-.eslintrc.json 파일작성, .prettierrc 파일작성 >> 항목별로 의미 찾아보기
+.eslintrc.js 파일작성, .prettierrc 파일작성 >> 항목별로 의미 찾아보기
 
 yarn add -D @types/eslint-plugin-prettier 
 
-yarn add styled-component
+yarn add styled-components
 yarn add -D @types/styled-components
 yarn add styled-normalize // 브라우저마다 다르게 보이는 css를 초기화 시키기 위해 다운
