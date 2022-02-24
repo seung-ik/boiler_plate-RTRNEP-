@@ -8,3 +8,5 @@ yarn add -D eslint-plugin-react eslint-plugin-react-hooks
 yarn add -D eslint-plugin-jsx-a11y eslint-plugin-import
 
 yarn eslint --init
+
+.eslintrc.json 파일작성, .prettierrc 파일작성 >> 항목별로 의미 찾아보기
