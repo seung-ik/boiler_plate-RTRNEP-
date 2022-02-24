@@ -1,11 +1,12 @@
 module.exports = {
     plugins: ['@typescript-eslint', 'react'],
     extends: [
+      'plugin:react/recommended',
       'airbnb',
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
+      'plugin:prettier/recommended',
+      'plugin:@typescript-eslint/recommended',
+      'prettier/@typescript-eslint',
+      'plugin:testing-library/react',
     ],
     parser: '@typescript-eslint/parser',
     /*
@@ -14,7 +15,6 @@ module.exports = {
       eslint-plugin-import는 airbnb에서 포함하고 있는 패키지임.
       향후 eslint-import-resolver-typescript가 deprecated 되거나 api가 바뀌었을 경우 유지보수가 어려울 수 있음.
     */
-
     // eslint-import-resolver-typescript 설정
     settings: {
       'import/resolver': {
@@ -45,8 +45,6 @@ module.exports = {
             '**/*.test.ts',
             '**/*.spec.tsx',
             '**/*.stories.tsx',
-            'test-utils.tsx',
-            'jest.config.js',
           ],
         },
       ],
@@ -67,7 +65,6 @@ module.exports = {
       'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
       'no-use-before-define': 'off',
       'no-shadow': 'off',
-      "prettier/prettier": "error"
     },
   
     overrides: [

@@ -1,4 +1,4 @@
-npx create-react-app my-app --template typescript  >> 제목에 괄호 들어가면 zsh missing end of string 에러
+npx create-next-app --typescript  >> 제목에 괄호 들어가면 zsh missing end of string 에러
 
 yarn add -D eslint prettier
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
