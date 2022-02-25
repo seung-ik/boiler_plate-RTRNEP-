@@ -18,6 +18,7 @@
     "paths":{
       "@styles/*":["src/styles/*"],
       "@store/*":["src/store/*"],
+      "@actions/*":["src/store/actions/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

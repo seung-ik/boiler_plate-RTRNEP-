@@ -1,9 +1,18 @@
+import { RootState } from '@store/reducers';
 import React from 'react';
-import test from '@store/index';
+import { useSelector } from 'react-redux';
 
 const Home: React.FC = () => {
-  console.log(test);
-  return <div>안녕aaaa</div>;
+  const { language, name, age } = useSelector(({ userStore }: RootState) => userStore);
+  
+  return (
+    <>
+      <div>뭐만들지?</div>
+      <div>{language}</div>
+      <div>{name}</div>
+      <div>{age}</div>
+    </>
+  );
 };
 
-export default Home
+export default Home;
