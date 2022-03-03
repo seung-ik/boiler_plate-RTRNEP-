@@ -27,3 +27,6 @@ tsconfig.json // alias 등록, rule 확인
 yarn add redux react-redux @types/react-redux
 yarn add redux-thunk typesafe-actions // 나중에 툴킷 써보자 굳이?ㅎㅎ
 yarn add redux-devtools-extension // 데브툴 적용
+
+pages > _app.tsx는 앱이 시작할 때 가장 먼저 호출되며, 라우팅도 이 페이지에서 내부적으로 작동하면 되기 때문에 앱의 글로벌한 작업들을 수행하기에 좋습니다( layout , store, interceptor, gtag)
+pages > _document.tsx html 구조조작,( head, meta 태크 설정)
